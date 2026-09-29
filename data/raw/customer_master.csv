@@ -1,0 +1,201 @@
+Customer_ID,Region,Province,Segment,Account_Manager
+CUST00001,Atlantic Canada,New Brunswick,Mid-Market,Daniel Leblanc
+CUST00002,Western Canada,Manitoba,Mid-Market,Sophie Martin
+CUST00003,Northern Canada,Nunavut,Small Business,Jennifer Singh
+CUST00004,Northern Canada,Yukon,Startup,Daniel Leblanc
+CUST00005,Atlantic Canada,Nova Scotia,Enterprise,Aisha Mohammed
+CUST00006,Northern Canada,Nunavut,Small Business,Emily Wong
+CUST00007,Central Canada,Ontario,Mid-Market,Alexandre Tremblay
+CUST00008,Atlantic Canada,New Brunswick,Mid-Market,Sophie Martin
+CUST00009,Atlantic Canada,Newfoundland and Labrador,Enterprise,Jennifer Singh
+CUST00010,Western Canada,Saskatchewan,Mid-Market,Priya Patel
+CUST00011,Atlantic Canada,New Brunswick,Startup,Thomas Anderson
+CUST00012,Northern Canada,Yukon,Mid-Market,David Kim
+CUST00013,Northern Canada,Yukon,Small Business,Daniel Leblanc
+CUST00014,Atlantic Canada,Nova Scotia,Small Business,Priya Patel
+CUST00015,Central Canada,Ontario,Mid-Market,Emily Wong
+CUST00016,Western Canada,Manitoba,Startup,Alexandre Tremblay
+CUST00017,Atlantic Canada,Nova Scotia,Startup,Marie Lefebvre
+CUST00018,Atlantic Canada,Nova Scotia,Mid-Market,Sophie Martin
+CUST00019,Western Canada,Saskatchewan,Small Business,Ryan O'Connor
+CUST00020,Central Canada,Quebec,Mid-Market,Thomas Anderson
+CUST00021,Central Canada,Ontario,Mid-Market,Emily Wong
+CUST00022,Western Canada,Alberta,Enterprise,Aisha Mohammed
+CUST00023,Atlantic Canada,Nova Scotia,Small Business,Sarah Chen
+CUST00024,Northern Canada,Northwest Territories,Small Business,Ryan O'Connor
+CUST00025,Central Canada,Quebec,Enterprise,Ryan O'Connor
+CUST00026,Western Canada,Alberta,Mid-Market,Ryan O'Connor
+CUST00027,Northern Canada,Northwest Territories,Startup,James MacDonald
+CUST00028,Central Canada,Ontario,Mid-Market,Emily Wong
+CUST00029,Western Canada,British Columbia,Enterprise,Thomas Anderson
+CUST00030,Northern Canada,Northwest Territories,Small Business,Daniel Leblanc
+CUST00031,Atlantic Canada,Newfoundland and Labrador,Startup,David Kim
+CUST00032,Central Canada,Quebec,Mid-Market,David Kim
+CUST00033,Northern Canada,Nunavut,Small Business,Daniel Leblanc
+CUST00034,Northern Canada,Northwest Territories,Small Business,Emily Wong
+CUST00035,Atlantic Canada,Prince Edward Island,Mid-Market,Jennifer Singh
+CUST00036,Western Canada,British Columbia,Small Business,James MacDonald
+CUST00037,Northern Canada,Yukon,Mid-Market,Sarah Chen
+CUST00038,Northern Canada,Yukon,Small Business,Ryan O'Connor
+CUST00039,Atlantic Canada,Newfoundland and Labrador,Small Business,Ryan O'Connor
+CUST00040,Northern Canada,Northwest Territories,Small Business,Emily Wong
+CUST00041,Northern Canada,Northwest Territories,Enterprise,Jennifer Singh
+CUST00042,Western Canada,Saskatchewan,Small Business,David Kim
+CUST00043,Northern Canada,Northwest Territories,Mid-Market,David Kim
+CUST00044,Atlantic Canada,New Brunswick,Mid-Market,Alexandre Tremblay
+CUST00045,Western Canada,Manitoba,Enterprise,Emily Wong
+CUST00046,Atlantic Canada,Prince Edward Island,Small Business,James MacDonald
+CUST00047,Western Canada,Saskatchewan,Small Business,Michael Dubois
+CUST00048,Central Canada,Ontario,Enterprise,James MacDonald
+CUST00049,Western Canada,Saskatchewan,Small Business,Aisha Mohammed
+CUST00050,Atlantic Canada,New Brunswick,Mid-Market,David Kim
+CUST00051,Central Canada,Ontario,Small Business,David Kim
+CUST00052,Atlantic Canada,Prince Edward Island,Mid-Market,Priya Patel
+CUST00053,Atlantic Canada,New Brunswick,Small Business,David Kim
+CUST00054,Western Canada,Alberta,Mid-Market,Daniel Leblanc
+CUST00055,Western Canada,Manitoba,Startup,Sarah Chen
+CUST00056,Atlantic Canada,Prince Edward Island,Enterprise,Robert Johnson
+CUST00057,Northern Canada,Northwest Territories,Mid-Market,Emily Wong
+CUST00058,Western Canada,Alberta,Enterprise,Sophie Martin
+CUST00059,Atlantic Canada,Newfoundland and Labrador,Startup,James MacDonald
+CUST00060,Atlantic Canada,Prince Edward Island,Startup,Daniel Leblanc
+CUST00061,Atlantic Canada,Newfoundland and Labrador,Mid-Market,Robert Johnson
+CUST00062,Central Canada,Ontario,Small Business,Daniel Leblanc
+CUST00063,Western Canada,Alberta,Small Business,Jennifer Singh
+CUST00064,Western Canada,Manitoba,Small Business,Michael Dubois
+CUST00065,Northern Canada,Northwest Territories,Small Business,Sarah Chen
+CUST00066,Northern Canada,Northwest Territories,Mid-Market,Thomas Anderson
+CUST00067,Atlantic Canada,New Brunswick,Enterprise,Daniel Leblanc
+CUST00068,Northern Canada,Northwest Territories,Startup,Daniel Leblanc
+CUST00069,Northern Canada,Nunavut,Startup,Fatima Ahmed
+CUST00070,Atlantic Canada,Nova Scotia,Small Business,James MacDonald
+CUST00071,Western Canada,Saskatchewan,Mid-Market,Robert Johnson
+CUST00072,Western Canada,British Columbia,Mid-Market,Thomas Anderson
+CUST00073,Western Canada,Manitoba,Small Business,Michael Dubois
+CUST00074,Western Canada,Alberta,Startup,Priya Patel
+CUST00075,Atlantic Canada,Nova Scotia,Startup,Thomas Anderson
+CUST00076,Western Canada,Manitoba,Small Business,Sarah Chen
+CUST00077,Western Canada,Alberta,Small Business,Sarah Chen
+CUST00078,Central Canada,Quebec,Enterprise,Sophie Martin
+CUST00079,Central Canada,Quebec,Mid-Market,Priya Patel
+CUST00080,Atlantic Canada,Newfoundland and Labrador,Startup,Fatima Ahmed
+CUST00081,Western Canada,Manitoba,Small Business,Emily Wong
+CUST00082,Central Canada,Quebec,Enterprise,Thomas Anderson
+CUST00083,Northern Canada,Nunavut,Enterprise,Priya Patel
+CUST00084,Western Canada,Alberta,Small Business,Sarah Chen
+CUST00085,Atlantic Canada,Newfoundland and Labrador,Enterprise,Sarah Chen
+CUST00086,Northern Canada,Northwest Territories,Mid-Market,Robert Johnson
+CUST00087,Western Canada,Alberta,Small Business,David Kim
+CUST00088,Atlantic Canada,Newfoundland and Labrador,Small Business,Fatima Ahmed
+CUST00089,Western Canada,Manitoba,Small Business,Thomas Anderson
+CUST00090,Atlantic Canada,Nova Scotia,Mid-Market,Sophie Martin
+CUST00091,Atlantic Canada,New Brunswick,Small Business,Sophie Martin
+CUST00092,Northern Canada,Northwest Territories,Mid-Market,Thomas Anderson
+CUST00093,Atlantic Canada,Prince Edward Island,Mid-Market,Aisha Mohammed
+CUST00094,Atlantic Canada,Nova Scotia,Small Business,Ryan O'Connor
+CUST00095,Central Canada,Ontario,Small Business,Michael Dubois
+CUST00096,Northern Canada,Nunavut,Small Business,Sophie Martin
+CUST00097,Western Canada,Alberta,Small Business,Priya Patel
+CUST00098,Central Canada,Ontario,Small Business,Michael Dubois
+CUST00099,Atlantic Canada,Nova Scotia,Enterprise,Priya Patel
+CUST00100,Atlantic Canada,Newfoundland and Labrador,Mid-Market,Jennifer Singh
+CUST00101,Atlantic Canada,Prince Edward Island,Mid-Market,Sarah Chen
+CUST00102,Northern Canada,Northwest Territories,Mid-Market,David Kim
+CUST00103,Northern Canada,Northwest Territories,Startup,Robert Johnson
+CUST00104,Northern Canada,Northwest Territories,Mid-Market,Sophie Martin
+CUST00105,Northern Canada,Nunavut,Startup,David Kim
+CUST00106,Atlantic Canada,Prince Edward Island,Small Business,David Kim
+CUST00107,Northern Canada,Nunavut,Small Business,David Kim
+CUST00108,Northern Canada,Nunavut,Small Business,Ryan O'Connor
+CUST00109,Western Canada,British Columbia,Small Business,Michael Dubois
+CUST00110,Atlantic Canada,Prince Edward Island,Small Business,Priya Patel
+CUST00111,Atlantic Canada,New Brunswick,Mid-Market,Marie Lefebvre
+CUST00112,Atlantic Canada,Prince Edward Island,Small Business,Jennifer Singh
+CUST00113,Atlantic Canada,Nova Scotia,Mid-Market,James MacDonald
+CUST00114,Western Canada,British Columbia,Enterprise,David Kim
+CUST00115,Northern Canada,Northwest Territories,Small Business,Emily Wong
+CUST00116,Atlantic Canada,Nova Scotia,Mid-Market,Michael Dubois
+CUST00117,Atlantic Canada,Nova Scotia,Startup,Sophie Martin
+CUST00118,Northern Canada,Yukon,Startup,Fatima Ahmed
+CUST00119,Western Canada,Saskatchewan,Startup,Sophie Martin
+CUST00120,Western Canada,British Columbia,Mid-Market,Robert Johnson
+CUST00121,Atlantic Canada,Nova Scotia,Enterprise,James MacDonald
+CUST00122,Western Canada,Saskatchewan,Startup,Marie Lefebvre
+CUST00123,Western Canada,Saskatchewan,Mid-Market,Emily Wong
+CUST00124,Western Canada,British Columbia,Startup,Sophie Martin
+CUST00125,Northern Canada,Yukon,Startup,Marie Lefebvre
+CUST00126,Central Canada,Ontario,Startup,James MacDonald
+CUST00127,Atlantic Canada,Newfoundland and Labrador,Mid-Market,David Kim
+CUST00128,Atlantic Canada,New Brunswick,Mid-Market,Emily Wong
+CUST00129,Atlantic Canada,Newfoundland and Labrador,Startup,Marie Lefebvre
+CUST00130,Atlantic Canada,Prince Edward Island,Mid-Market,Robert Johnson
+CUST00131,Northern Canada,Northwest Territories,Mid-Market,Daniel Leblanc
+CUST00132,Atlantic Canada,New Brunswick,Small Business,Priya Patel
+CUST00133,Atlantic Canada,Prince Edward Island,Startup,Sarah Chen
+CUST00134,Atlantic Canada,Nova Scotia,Small Business,Priya Patel
+CUST00135,Northern Canada,Northwest Territories,Small Business,Daniel Leblanc
+CUST00136,Western Canada,Alberta,Enterprise,James MacDonald
+CUST00137,Western Canada,British Columbia,Small Business,Michael Dubois
+CUST00138,Atlantic Canada,New Brunswick,Startup,Sarah Chen
+CUST00139,Atlantic Canada,New Brunswick,Enterprise,Jennifer Singh
+CUST00140,Atlantic Canada,Nova Scotia,Small Business,Daniel Leblanc
+CUST00141,Central Canada,Ontario,Startup,Robert Johnson
+CUST00142,Western Canada,Saskatchewan,Small Business,Jennifer Singh
+CUST00143,Northern Canada,Northwest Territories,Small Business,Ryan O'Connor
+CUST00144,Atlantic Canada,Nova Scotia,Small Business,Daniel Leblanc
+CUST00145,Central Canada,Quebec,Mid-Market,Emily Wong
+CUST00146,Northern Canada,Yukon,Mid-Market,Thomas Anderson
+CUST00147,Western Canada,Saskatchewan,Small Business,Sarah Chen
+CUST00148,Western Canada,British Columbia,Small Business,Jennifer Singh
+CUST00149,Western Canada,Saskatchewan,Startup,Sophie Martin
+CUST00150,Central Canada,Ontario,Startup,Jennifer Singh
+CUST00151,Western Canada,Saskatchewan,Small Business,Marie Lefebvre
+CUST00152,Western Canada,British Columbia,Small Business,Priya Patel
+CUST00153,Central Canada,Ontario,Small Business,Marie Lefebvre
+CUST00154,Atlantic Canada,Newfoundland and Labrador,Small Business,Ryan O'Connor
+CUST00155,Atlantic Canada,New Brunswick,Small Business,Sarah Chen
+CUST00156,Atlantic Canada,New Brunswick,Small Business,Sarah Chen
+CUST00157,Northern Canada,Yukon,Startup,Ryan O'Connor
+CUST00158,Atlantic Canada,Prince Edward Island,Mid-Market,James MacDonald
+CUST00159,Atlantic Canada,Newfoundland and Labrador,Mid-Market,Daniel Leblanc
+CUST00160,Atlantic Canada,Newfoundland and Labrador,Enterprise,Marie Lefebvre
+CUST00161,Northern Canada,Northwest Territories,Small Business,Alexandre Tremblay
+CUST00162,Northern Canada,Nunavut,Enterprise,Sophie Martin
+CUST00163,Western Canada,Saskatchewan,Small Business,Fatima Ahmed
+CUST00164,Atlantic Canada,New Brunswick,Small Business,Priya Patel
+CUST00165,Western Canada,British Columbia,Mid-Market,Sarah Chen
+CUST00166,Western Canada,Manitoba,Small Business,James MacDonald
+CUST00167,Northern Canada,Nunavut,Enterprise,Thomas Anderson
+CUST00168,Western Canada,Manitoba,Enterprise,Sophie Martin
+CUST00169,Central Canada,Ontario,Small Business,Marie Lefebvre
+CUST00170,Atlantic Canada,New Brunswick,Mid-Market,Priya Patel
+CUST00171,Atlantic Canada,New Brunswick,Enterprise,Thomas Anderson
+CUST00172,Northern Canada,Nunavut,Small Business,Marie Lefebvre
+CUST00173,Northern Canada,Yukon,Small Business,Jennifer Singh
+CUST00174,Northern Canada,Nunavut,Mid-Market,Thomas Anderson
+CUST00175,Western Canada,Manitoba,Small Business,Ryan O'Connor
+CUST00176,Northern Canada,Nunavut,Enterprise,Aisha Mohammed
+CUST00177,Atlantic Canada,New Brunswick,Enterprise,Daniel Leblanc
+CUST00178,Northern Canada,Yukon,Small Business,James MacDonald
+CUST00179,Western Canada,Saskatchewan,Small Business,Priya Patel
+CUST00180,Central Canada,Quebec,Small Business,David Kim
+CUST00181,Northern Canada,Northwest Territories,Small Business,Aisha Mohammed
+CUST00182,Western Canada,Alberta,Startup,Daniel Leblanc
+CUST00183,Atlantic Canada,Newfoundland and Labrador,Small Business,Emily Wong
+CUST00184,Northern Canada,Nunavut,Mid-Market,Emily Wong
+CUST00185,Atlantic Canada,Prince Edward Island,Small Business,Priya Patel
+CUST00186,Central Canada,Ontario,Mid-Market,Thomas Anderson
+CUST00187,Central Canada,Quebec,Mid-Market,Marie Lefebvre
+CUST00188,Northern Canada,Northwest Territories,Enterprise,James MacDonald
+CUST00189,Northern Canada,Northwest Territories,Enterprise,Fatima Ahmed
+CUST00190,Northern Canada,Northwest Territories,Startup,Emily Wong
+CUST00191,Northern Canada,Northwest Territories,Small Business,James MacDonald
+CUST00192,Western Canada,Manitoba,Small Business,Emily Wong
+CUST00193,Northern Canada,Yukon,Mid-Market,Jennifer Singh
+CUST00194,Atlantic Canada,Newfoundland and Labrador,Mid-Market,Daniel Leblanc
+CUST00195,Atlantic Canada,New Brunswick,Mid-Market,Marie Lefebvre
+CUST00196,Northern Canada,Northwest Territories,Mid-Market,Jennifer Singh
+CUST00197,Atlantic Canada,Prince Edward Island,Small Business,Sophie Martin
+CUST00198,Atlantic Canada,New Brunswick,Small Business,Emily Wong
+CUST00199,Western Canada,British Columbia,Small Business,David Kim
+CUST00200,Western Canada,British Columbia,Mid-Market,David Kim

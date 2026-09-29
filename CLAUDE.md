@@ -1,0 +1,42 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project overview
+
+Time-series sales forecasting for a customer base. Currently an exploratory analysis in a single notebook; no build, lint, or test tooling exists yet.
+
+## Setup and running
+
+```bash
+pip install -r requirements.txt
+jupyter notebook notebooks/01_eda.ipynb
+```
+
+Notebooks load data with paths relative to `notebooks/` (e.g. `../data/raw/customer_master.csv`), so launch the kernel with `notebooks/` as the working directory (the default when opening the notebook in Jupyter or VS Code).
+
+## Data
+
+Two CSVs in `data/raw/`; treat them as read-only source data:
+
+- `customer_master.csv`: 200 customers. Columns are `Customer_ID`, `Region`, `Province`, `Segment`, and `Account_Manager` (all in Canada).
+- `customer_transactions.csv`: 1,000 transactions from 2025-02-15 to 2026-02-14. Columns are `Transaction_ID`, `Customer_ID`, `Transaction_Date`, `Product_Category`, `Quantity`, `Unit_Price`, and `Total_Amount`.
+
+They are inner-joined on `Customer_ID`. One customer has no transactions, so the merged frame has 199 unique customers.
+
+## Analysis flow (`notebooks/01_eda.ipynb`)
+
+1. Load and merge, then EDA: boxplots, countplots of the categorical columns, and distributions.
+2. Aggregate to two daily series by summing on `Transaction_Date`:
+   - `df_Quantity` (units)
+   - `df_Sales` (`Total_Amount`)
+3. Take a 7-day centered rolling mean, then run STL decomposition (statsmodels) with period=7 and period=30.
+4. Flag outliers with an IQR upper bound (Q3 + 1.5·IQR) on daily quantity.
+
+Forecasting is the planned next step; `prophet` is already in the requirements.
+
+## Layout conventions
+
+- `src/`: reusable Python modules. It is currently an empty package; move logic here when it gets reused across notebooks.
+- `reports/figures/`: saved plot outputs.
+- Number new notebooks sequentially (`02_...`, `03_...`).
