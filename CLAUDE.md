@@ -8,9 +8,11 @@ Time-series sales forecasting for a customer base. Currently an exploratory anal
 
 ## Setup and running
 
-```bash
-pip install -r requirements.txt
-jupyter notebook notebooks/01_eda.ipynb
+Dependencies live in a `.venv` (git-ignored) built from Anaconda's Python (`C:\Users\di_ba\anaconda3\python.exe`; Python is not on PATH). It is registered as the Jupyter kernel `sales-forecast`, which notebooks should use.
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\jupyter.exe notebook notebooks/01_eda.ipynb
 ```
 
 Notebooks load data with paths relative to `notebooks/` (e.g. `../data/raw/customer_master.csv`), so launch the kernel with `notebooks/` as the working directory (the default when opening the notebook in Jupyter or VS Code).

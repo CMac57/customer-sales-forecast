@@ -6,3 +6,4 @@ statsmodels
 dtale
 prophet
 jupyter
+ipykernel
