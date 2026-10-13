@@ -28,8 +28,8 @@ They are inner-joined on `Customer_ID`. One customer has no transactions, so the
 
 ## Analysis flow (`notebooks/01_eda.ipynb`)
 
-1. Load and merge, then EDA: boxplots, countplots of the categorical columns, and distributions.
-2. Aggregate to two daily series by summing on `Transaction_Date`:
+1. Load and merge, run Data Quality checks (nulls, duplicates, totals, unmatched customers, missing dates), then EDA: boxplots, countplots of the categorical columns, and distributions.
+2. Aggregate to two daily series by summing on `Transaction_Date`, reindexed to every calendar day (`all_dates`, defined in the Data Quality section) with 0 for the 30 days that have no sales:
    - `df_Quantity` (units)
    - `df_Sales` (`Total_Amount`)
 3. Take a 7-day centered rolling mean, then run STL decomposition (statsmodels) with period=7 and period=30.
