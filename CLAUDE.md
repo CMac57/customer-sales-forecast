@@ -35,10 +35,19 @@ They are inner-joined on `Customer_ID`. One customer has no transactions, so the
 3. Take a 7-day centered rolling mean, then run STL decomposition (statsmodels) with period=7 and period=30.
 4. Flag outliers with an IQR upper bound (Q3 + 1.5·IQR) on daily quantity.
 
-Forecasting is the planned next step; `prophet` is already in the requirements.
-
 ## Layout conventions
 
 - `src/`: reusable Python modules. It is currently an empty package; move logic here when it gets reused across notebooks.
 - `reports/figures/`: saved plot outputs.
 - Number new notebooks sequentially (`02_...`, `03_...`).
+
+## Progress
+
+**Finished on 2026-10-12:**
+- Set up `.venv` and the `sales-forecast` kernel.
+- Fixed the pandas 3 `select_dtypes` deprecation warning.
+- Added the Data Quality section. The only issue it found was 30 days with no sales.
+- Filled those 30 days with 0 in the daily series.
+- The notebook runs cleanly end to end.
+
+**Next step:** build the forecast in `notebooks/02_forecast.ipynb`, starting from the zero-filled `df_Quantity` and `df_Sales` series. `prophet` is already installed. Hold out the last few weeks to check accuracy, and decide whether the 4 outlier days should be kept or capped.
