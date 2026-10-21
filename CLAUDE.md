@@ -61,6 +61,8 @@ Key result: no model beats the plain average, daily or weekly. The data shows no
 - Tested Prophet and simple baselines; none beat the plain average.
 - Outliers kept (capping made under 0.5% difference).
 - Forecast for the 4 weeks ending 2026-02-21 to 2026-03-14: about 486 units/week (range 314–655) and $1.22M/week (range $726K–$1.68M).
+- An editor (likely VS Code with a stale buffer) once overwrote `01_eda.ipynb` with an older version: 62 cells, no Data Quality section, `python3` kernel. It was restored from git. Before committing, check that `01_eda` still has 74 cells and the `sales-forecast` kernel.
+- All work is committed and pushed to `origin/main`.
 
 **Possible next steps** (none decided yet):
 - Forecast by Segment or Product Category to see if any sub-series has structure.
