@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project overview
 
-Time-series sales forecasting for a customer base. Currently an exploratory analysis in a single notebook; no build, lint, or test tooling exists yet.
+Time-series sales forecasting for a customer base, in two notebooks: exploration (`01_eda`) and forecasting (`02_forecast`). No build, lint, or test tooling exists yet.
 
 ## Setup and running
 
@@ -35,9 +35,15 @@ They are inner-joined on `Customer_ID`. One customer has no transactions, so the
 3. Take a 7-day centered rolling mean, then run STL decomposition (statsmodels) with period=7 and period=30.
 4. Flag outliers with an IQR upper bound (Q3 + 1.5·IQR) on daily quantity.
 
+## Forecasting (`notebooks/02_forecast.ipynb`)
+
+Builds the same zero-filled daily series via `src/data.py` (`load_merged`, `daily_series`), imported with `sys.path.append('..')`. Compares a plain average, last-8-weeks average, weekday average and Prophet (with and without capped outliers) on a 28-day holdout and a 6-fold rolling backtest, scored by MAE. Prophet runs with yearly seasonality off (only one year of data), and its `cmdstanpy` logger is disabled to keep outputs clean. Figures are saved to `reports/figures/`.
+
+Key result: no model beats the plain average, daily or weekly. The data shows no trend or reliable weekly pattern. The final forecast is the average weekly total with a 10th–90th percentile range.
+
 ## Layout conventions
 
-- `src/`: reusable Python modules. It is currently an empty package; move logic here when it gets reused across notebooks.
+- `src/`: reusable Python modules. Logic moves here when it gets reused across notebooks; `src/data.py` loads the data and builds the daily series. `01_eda` still has its own inline version.
 - `reports/figures/`: saved plot outputs.
 - Number new notebooks sequentially (`02_...`, `03_...`).
 
@@ -50,4 +56,13 @@ They are inner-joined on `Customer_ID`. One customer has no transactions, so the
 - Filled those 30 days with 0 in the daily series.
 - The notebook runs cleanly end to end.
 
-**Next step:** build the forecast in `notebooks/02_forecast.ipynb`, starting from the zero-filled `df_Quantity` and `df_Sales` series. `prophet` is already installed. Hold out the last few weeks to check accuracy, and decide whether the 4 outlier days should be kept or capped.
+**Finished on 2026-10-21:**
+- Built `notebooks/02_forecast.ipynb` and `src/data.py`.
+- Tested Prophet and simple baselines; none beat the plain average.
+- Outliers kept (capping made under 0.5% difference).
+- Forecast for the 4 weeks ending 2026-02-21 to 2026-03-14: about 486 units/week (range 314–655) and $1.22M/week (range $726K–$1.68M).
+
+**Possible next steps** (none decided yet):
+- Forecast by Segment or Product Category to see if any sub-series has structure.
+- Switch `01_eda` to use `src/data.py`.
+- Get more history or forward-looking data (e.g. upcoming orders), which is what would actually improve accuracy.
