@@ -64,7 +64,8 @@ Key result: no model beats the plain average, daily or weekly. The data shows no
 - An editor (likely VS Code with a stale buffer) once overwrote `01_eda.ipynb` with an older version: 62 cells, no Data Quality section, `python3` kernel. It was restored from git. Before committing, check that `01_eda` still has 74 cells and the `sales-forecast` kernel.
 - All work is committed and pushed to `origin/main`.
 
-**Possible next steps** (none decided yet):
-- Forecast by Segment or Product Category to see if any sub-series has structure.
-- Switch `01_eda` to use `src/data.py`.
-- Get more history or forward-looking data (e.g. upcoming orders), which is what would actually improve accuracy.
+**Next session** (suggested order; nothing decided yet):
+1. **Start-up check:** run `git status` (it should be clean) and confirm `01_eda.ipynb` has 74 cells and the `sales-forecast` kernel. In VS Code, use *Revert File* on any notebook that was left open.
+2. **Forecast by segment** (recommended next analysis): in a new `notebooks/03_segment_forecast.ipynb`, rerun the weekly average-vs-Prophet backtest separately for each `Segment` and `Product_Category`. This checks whether any sub-series has a trend or pattern that the overall total hides. Expect them to be noisier, since each has fewer transactions.
+3. **Tidy-up:** switch `01_eda` to use `src/data.py`. Pin package versions in `requirements.txt` (the venv currently has pandas 3.0.6 and prophet 1.5.0) so results can be reproduced.
+4. **Data, not models:** the backtests show that only more data can improve accuracy, either a second year of history or forward-looking information such as upcoming orders. Raise this with whoever owns the data.
